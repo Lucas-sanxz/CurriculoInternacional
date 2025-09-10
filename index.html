@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio Bittencourt Daniel - Profissional de Relacionamento & Recursos Humanos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-translate="admin_login">Login Administrativo</h2>
+            <form id="adminForm">
+                <input type="text" id="adminUsername" placeholder="Usuário" required>
+                <input type="password" id="adminPassword" placeholder="Senha" required>
+                <button type="submit" data-translate="login">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="admin-panel hidden">
+        <div class="admin-header">
+            <h3 data-translate="admin_panel">Painel Administrativo</h3>
+            <button id="logoutBtn" data-translate="logout">Sair</button>
+        </div>
+        <div class="admin-content">
+            <button id="editBtn" data-translate="edit_profile">Editar Perfil</button>
+            <button id="saveBtn" data-translate="save_changes" class="hidden">Salvar Alterações</button>
+            <button id="cancelBtn" data-translate="cancel" class="hidden">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-name" data-translate="name">Fabio Bittencourt Daniel</span>
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home" data-translate="nav_home">Início</a>
+            <a href="#about" data-translate="nav_about">Sobre</a>
+            <a href="#experience" data-translate="nav_experience">Experiência</a>
+            <a href="#skills" data-translate="nav_skills">Habilidades</a>
+            <a href="#portfolio" data-translate="nav_portfolio">Portfólio</a>
+            <a href="#contact" data-translate="nav_contact">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-name" data-translate="name">Fabio Bittencourt Daniel</h1>
+                    <h2 class="hero-title" data-translate="professional_title">Profissional de Relacionamento & Recursos Humanos</h2>
+                    <p class="hero-description" data-translate="hero_description">
+                        Ao longo da minha trajetória em Recursos Humanos, desenvolvi habilidades essenciais para lidar com pessoas, construir conexões significativas e entender as necessidades dos colaboradores e da empresa. Agora, trago essa experiência para a área de Relacionamento, onde sigo focada em proporcionar interações de alto valor, fortalecer laços e impulsionar a satisfação e fidelização.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" data-translate="contact_me">Entre em Contato</button>
+                        <button class="btn-secondary" data-translate="learn_more">Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="cards-grid">
+                        <div class="card">
+                            <i class="fas fa-rocket card-icon"></i>
+                            <h3 data-translate="innovation">Inovação</h3>
+                            <p data-translate="innovation_desc">Sempre à frente das tendências</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-users card-icon"></i>
+                            <h3 data-translate="leadership">Liderança</h3>
+                            <p data-translate="leadership_desc">Gestão de equipes de alta performance</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chart-line card-icon"></i>
+                            <h3 data-translate="results">Resultados</h3>
+                            <p data-translate="results_desc">Foco em entregas de valor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 data-translate="about_title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-translate="about_text">
+                            Profissional experiente em Recursos Humanos com transição estratégica para área de Relacionamento. Especializada em gestão de pessoas, desenvolvimento de equipes e construção de relacionamentos duradouros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 data-translate="experience_title">Experiência Profissional</h2>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 - Presente</div>
+                        <div class="timeline-content">
+                            <h3 data-translate="current_position">Gerente de Relacionamento</h3>
+                            <p data-translate="current_company">FBD Global Business Strategy</p>
+                            <p data-translate="current_description">Liderança de equipes de relacionamento, desenvolvimento de estratégias de fidelização e gestão de projetos de alto impacto.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <div class="timeline-content">
+                            <h3 data-translate="previous_position">Coordenadora de RH</h3>
+                            <p data-translate="previous_company">Empresa Anterior</p>
+                            <p data-translate="previous_description">Gestão de processos de RH, recrutamento e seleção, desenvolvimento organizacional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 data-translate="skills_title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 data-translate="soft_skills">Habilidades Interpessoais</h3>
+                        <ul>
+                            <li data-translate="skill_1">Liderança de Equipes</li>
+                            <li data-translate="skill_2">Comunicação Eficaz</li>
+                            <li data-translate="skill_3">Gestão de Conflitos</li>
+                            <li data-translate="skill_4">Desenvolvimento de Pessoas</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="technical_skills">Habilidades Técnicas</h3>
+                        <ul>
+                            <li data-translate="tech_skill_1">Gestão de Projetos</li>
+                            <li data-translate="tech_skill_2">Análise de Dados</li>
+                            <li data-translate="tech_skill_3">Sistemas de RH</li>
+                            <li data-translate="tech_skill_4">Estratégias de Relacionamento</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 data-translate="portfolio_title">Portfólio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3 data-translate="project_1_title">Projeto de Fidelização</h3>
+                        <p data-translate="project_1_desc">Desenvolvimento de estratégia que aumentou a retenção de clientes em 40%.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 data-translate="project_2_title">Reestruturação de Equipe</h3>
+                        <p data-translate="project_2_desc">Liderança de processo que otimizou a produtividade em 35%.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 data-translate="contact_title">Contato</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-translate="email">celia.cunha@fbdglobal.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span data-translate="phone">+55 (11) 99999-9999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-translate="location">São Paulo, SP - Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
